@@ -35,6 +35,23 @@ Learn Jekyll with step-by-step tutorials and videos at [Jekyll Tips](http://jeky
 
 Frisco was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
 
+You will need to have `ruby` installed
+```bash
+$ sudo apt install ruby-full # this will install version 2.7 and package ruby
+$ dpkg -l ruby
+ii  ruby           1:2.7+1      amd64        Interpreter of object-oriented scripting language Ruby>
+lines 1-6/6 (END)
+```
+You will need to install bundler too via `apt` or `snap` or `gem`
+```bash
+$ sudo apt install ruby-bundler
+# $ sudo gem install bundler
+```
+Additionally you will need to update bundler if installed via `apt`
+```bash
+$ sudo bundle update --bundler
+```
+
 Install the dependencies with [Bundler](http://bundler.io/):
 
 ~~~bash
